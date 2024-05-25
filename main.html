@@ -16,20 +16,9 @@ html, body, #jsdos {
     <body>
         <div id="jsdos" />
             <script>
-
-        const urlParams = new URLSearchParams(new URL(window.location.href).search);
-        const game = urlParams.get('a');
-       // const game = urlParams.get('a');
-
-
-
-
-// 使用方法
-//var params = getURLParams();
-//var param1 = params['dosid']; // 'value1'
-//var param2 = params['param2']; // 'value2'
+                const urlParams = new URLSearchParams(new URL(window.location.href).search);
+const game = urlParams.get('a');
 var paramini = "/roms/"+game+".jsdos";
-
 
 emulators.pathPrefix = "/js-dos/";
 Dos(document.getElementById("jsdos"))
