@@ -40,6 +40,19 @@ var paramini = "/roms/"+params['dosid']+".jsdos";
 emulators.pathPrefix = "/js-dos/";
 Dos(document.getElementById("jsdos"))
     .run(paramini);
+
+
+
+	/*
+	                const urlParams = new URLSearchParams(new URL(window.location.href).search);
+const game = urlParams.get('a');
+const gameid=parseInt(game,16)-1000//转
+var paramini = "/roms/"+gameid+".jsdos";//转
+
+emulators.pathPrefix = "/js-dos/";
+Dos(document.getElementById("jsdos"))
+    .run(paramini);
+	*/
             </script>
     </body>
 </html>
